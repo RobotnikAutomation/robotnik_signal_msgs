@@ -7,7 +7,11 @@ project(robotnik_signal_msgs)
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
-find_package(catkin REQUIRED 
+find_package(catkin REQUIRED COMPONENTS
+    roscpp
+    rospy
+    std_msgs
+    robotnik_msgs
     message_generation
 )
 
@@ -52,7 +56,6 @@ add_message_files(
 
 ## Generate services in the 'srv' folder
 add_service_files(
-    DIRECTORY srv
     FILES
     SetSignal.srv
 )
@@ -64,10 +67,9 @@ add_service_files(
 ## )
 
 ## Generate added messages and services with any dependencies listed here
-## generate_messages(
-##     DEPENDENCIES
-##     actionlib_msgs
-## )
+generate_messages(DEPENDENCIES
+    robotnik_msgs
+)
 
 ################################################
 ## Declare ROS dynamic reconfigure parameters ##
@@ -101,7 +103,7 @@ add_service_files(
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES robot_simple_command_manager_msgs
-   CATKIN_DEPENDS message_runtime #actionlib_msgs
+   CATKIN_DEPENDS message_runtime
 #  DEPENDS system_lib
 )
 
