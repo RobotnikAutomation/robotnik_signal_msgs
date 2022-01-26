@@ -9,6 +9,9 @@ string SIGNAL_ARM_CONTROLLER_ERROR=arm_controller_error
 string SIGNAL_SENSOR_ERROR=sensor_error
 string SIGNAL_ROBOT_IDLE=robot_idle
 string SIGNAL_ROBOT_MOVING=robot_moving
+string SIGNAL_ROBOT_AUTO=robot_auto
+string SIGNAL_ROBOT_MANUAL=robot_manual
+string SIGNAL_ROBOT_MAINTENANCE=robot_maintenance
 string SIGNAL_RAISING_ELEVATOR=raising_elevator
 string SIGNAL_LOWERING_ELEVATOR=lowering_elevator
 
