@@ -14,7 +14,6 @@ string SIGNAL_ROBOT_MANUAL=robot_manual
 string SIGNAL_ROBOT_MAINTENANCE=robot_maintenance
 string SIGNAL_RAISING_ELEVATOR=raising_elevator
 string SIGNAL_LOWERING_ELEVATOR=lowering_elevator
-string SIGNAL_ROBOT_READY=robot_ready
 
 string node_name
 string[] active_signals
