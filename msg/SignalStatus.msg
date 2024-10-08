@@ -14,6 +14,8 @@ string SIGNAL_ROBOT_MANUAL=robot_manual
 string SIGNAL_ROBOT_MAINTENANCE=robot_maintenance
 string SIGNAL_RAISING_ELEVATOR=raising_elevator
 string SIGNAL_LOWERING_ELEVATOR=lowering_elevator
+string SIGNAL_LOCALIZATION_ERROR=localization_error
+string SIGNAL_LOCALIZATION_NOT_RELIABLE=localization_not_reliable
 
 string node_name
 string[] active_signals
