@@ -16,6 +16,8 @@ string SIGNAL_RAISING_ELEVATOR=raising_elevator
 string SIGNAL_LOWERING_ELEVATOR=lowering_elevator
 string SIGNAL_LOCALIZATION_ERROR=localization_error
 string SIGNAL_LOCALIZATION_NOT_RELIABLE=localization_not_reliable
+string SIGNAL_ROBOT_DOCKING=dock_to_charge
+
 
 string node_name
 string[] active_signals
